@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg,black, rgb(94, 94, 94) );
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: transparent;
+    display: fixed;
+    height: 60px;
+    justify-content: left;
+    padding: 15px 20px;
+}
+
+header .btn-volver {
+    font-size: 2em;
+    outline: none;
+    background: transparent;
+    color: white ;
+    border: none;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: black;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid white;
+    color: white;
+    margin: 10px;
+    font-weight: 300;
+}
+
+.formulario h2{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .input-box{
+    position: relative;
+    border-bottom: 1px solid white;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: 200;
+    color: white;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    top: -5px;
+    font-weight: 400;
+}
+
+.input-box span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transition: .5s;
+}
+
+/*
+.Email input:valid ~ label {
+    color: red;
+}
+*/
+
+.input-box input:focus ~ span::before,
+.input-box input:focus ~ span::before{
+    width: 100%;
+}
+
+input[type="submit"] {
+    margin-left: 18%;
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    background: black;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover{
+    background: white;
+    color: black;
+    transition: .5s;
+}
+
