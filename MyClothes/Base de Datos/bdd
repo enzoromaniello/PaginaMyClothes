@@ -1,0 +1,55 @@
+DROP DATABASE if EXISTS myclothes;
+
+CREATE DATABASE myclothes;
+
+USE myclothes;
+
+CREATE TABLE Carrito_Virtual (
+  id_carrito int AUTO_INCREMENT,
+  dni int,
+  cant_producto int,
+  PRIMARY KEY (id_carrito)
+);
+
+CREATE TABLE Comprobante_de_Pago (
+  codCDP int AUTO_INCREMENT,
+  cod_compra int,
+  id_carrito int,
+  fecha date,
+  PRIMARY KEY (codCDP)
+);
+
+CREATE TABLE Usuario (
+  dni int,
+  nombre varchar(100),
+  apellido varchar(100),
+  email varchar(100),
+  telefono int,
+  direccion varchar(100),
+  Usuario boolean,
+  Administrador boolean,
+  super_usuario boolean,
+  contrasena varchar(100),
+  PRIMARY KEY (dni)
+);
+
+CREATE TABLE Compra (
+  cod_compra int AUTO_INCREMENT,
+  dni int,
+  cod_producto int,
+  id_carrito int,
+  PRIMARY KEY (cod_compra),
+  FOREIGN KEY (id_carrito) REFERENCES Carrito_Virtual(id_carrito),
+  FOREIGN KEY (dni) REFERENCES Usuario(dni)
+);
+
+CREATE TABLE Producto (
+  cod_producto int AUTO_INCREMENT,
+  id_carrito int,
+  tipo varchar(100),
+  precio int,
+  url varchar(100),
+  PRIMARY KEY (cod_producto),
+  FOREIGN KEY (id_carrito) REFERENCES Carrito_Virtual(id_carrito)
+);
+

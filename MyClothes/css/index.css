@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* CSS Botones */
+.boton-login {
+    margin-top: 0px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: black;
+    background: white;
+    font-weight: 500;
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boton-login:hover{
+    background: black;
+    color: white;
+}
+
+.boton-register {
+    margin-top: 0px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: black;
+    background: white;
+    font-weight: 500;
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton-register:hover{
+    background: black;
+    color: white;
+}
+
+.boton-logout {
+    margin-top: 0px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: black;
+    background: white;
+    font-weight: 500;
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton-logout:hover{
+    background: black;
+    color: white;
+}
+
+/* CSS nav */
+.navbar-collapse {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.derecha .botones{
+    margin: 5px;
+}
+
+/* CSS Titulo/SubTitulos */
+.title{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.categorias{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-top: 2px solid black;
+}
+
+/* CSS Footer */
+
+footer{
+    background: black;
+    height: auto;
+    width: auto;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    padding-top: 40px;
+    color: white;
+}
+
+.contactos{
+    list-style: none;
+}
+
+.lista a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom{
+    background: black;
+    width: auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
